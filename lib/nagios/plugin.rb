@@ -11,6 +11,7 @@ module Nagios
     def initialize
       @config = Nagios::Config.new
       @status_used = nil
+      @stats = {}
     end
 
     def run!
